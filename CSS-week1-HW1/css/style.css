@@ -2,7 +2,7 @@
 body {
     font-family: Arial, sans-serif;
     font-size: 16px;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
     color: #333333;
 }
 
@@ -18,15 +18,19 @@ nav {
     padding: 10px;
 }
 
-/* Kiểu cho đường link trong nav giúp sửa 5 lỗi Contrast Errors trên WAVE */
-nav a {
-    color: #ffffff; /* Chữ màu trắng sáng trên nền tối */
-    text-decoration: none;
-    font-weight: bold;
+/* Quy tắc đổi màu cho TẤT CẢ các thẻ link (bao gồm cả nav, main và footer) */
+a {
+    color: #1a0dab; /* Màu xanh chuẩn tương phản tốt trên nền trắng */
 }
 
-nav a:hover {
-    color: #f1c40f; /* Đổi sang màu vàng khi di chuột */
+/* Đổi màu link trong Header và Footer để hiển thị rõ trên nền tối */
+header a, footer a {
+    color: #ffffff !important; /* Chữ màu trắng nổi bật hoàn toàn */
+    text-decoration: underline;
+}
+
+header a:hover, footer a:hover {
+    color: #f1c40f !important; /* Màu vàng khi di chuột */
 }
 
 /* 6. Thẻ chính (main): màu nền và kích thước phông chữ */
