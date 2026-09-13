@@ -1,93 +1,30 @@
-/* 3. Thẻ nội dung (body) */
-body {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    background-color: #ffffff;
-    color: #333333;
+/* Navigation styling with inline-block */
+nav ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-/* 4. Thẻ header */
-header {
-    background-color: #2c3e50;
-    padding: 20px;
-}
-
-/* 5. Thẻ nav - Cập nhật theo yêu cầu */
-nav {
-    background-color: #34495e;
-    padding: 10px;
+nav li {
     display: inline-block;
-    width: 80%;
+    margin-right: 15px;
 }
 
-/* Bộ chọn hậu duệ cho hình ảnh trong điều hướng */
-nav img {
-    width: 10%;
-}
-
-/* 6. Thẻ main */
-main {
-    background-color: #ffffff;
-    font-size: 18px;
-    padding: 20px;
-}
-
-/* 7. Thẻ footer */
-footer {
-    background-color: #2c3e50;
-    color: #ffffff;
-    text-align: center;
-    padding: 15px;
-}
-
-/* BẮT BUỘC TẤT CẢ CÁC ĐƯỜNG LINK CÓ NỀN TỐI ĐỀU CHUYỂN SANG MÀU VÀNG SÁNG */
-header a, nav a, footer a, a {
-    color: #f1c40f !important; /* Màu vàng sáng - Đảm bảo tương phản hoàn hảo trên mọi nền tối */
-    font-weight: bold;
-}
-
-/* Link trong phần nội dung chính (nền trắng) */
-main a {
-    color: #0056b3 !important; /* Xanh đậm chuẩn WCAG trên nền trắng */
-}
-
-/* 8. Thẻ li - Nhận xét kiểu dáng cũ theo yêu cầu */
-/* 
-li {
-    display: inline-block;
-    width: 120px;
-} 
-*/
-
-/* 9. Thẻ h1 */
-h1 {
-    text-align: center;
-    font-family: 'Georgia', serif;
-    color: #ffffff;
-}
-
-/* 10. Thẻ p */
-p {
-    line-height: 1.6;
-}
-
-/* Tạo kiểu cho lớp lưới (grid) */
+/* Grid layout for neighborhood.html images */
 .grid {
     display: grid;
-    grid-template-columns: 40% 40%;
-    justify-content: center;
-    align-items: center;
-    row-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
 }
 
-/* Bộ chọn hậu duệ cho hình ảnh trong lớp lưới */
-.grid img {
-    width: 100%;
-}
-
-/* Tạo kiểu cho lớp flex */
+/* Flex layout for parks.html images */
 .flex {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    gap: 15px;
+}
+
+/* Sửa lỗi độ tương phản cho liên kết Chuyển đến nội dung chính */
+body > a {
+    color: #0056b3;
+    font-weight: bold;
 }
