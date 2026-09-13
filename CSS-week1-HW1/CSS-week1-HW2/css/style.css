@@ -23,7 +23,7 @@ nav li {
     gap: 15px;
 }
 
-/* Sửa lỗi độ tương phản cho liên kết Chuyển đến nội dung chính */
+/* Khắc phục lỗi độ tương phản cho liên kết Chuyển đến nội dung chính */
 body > a {
     color: #0056b3;
     font-weight: bold;
